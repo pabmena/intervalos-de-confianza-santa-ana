@@ -3,8 +3,7 @@ import numpy as np
 from scipy import stats
 
 # Leer los datos desde la hoja 'Santa Ana' del archivo Excel
-data = pd.read_excel('C:/Users/pabme/OneDrive/Escritorio/IA-UBA/ExamenFinal_PEIA/Datos_examen_final_18Co2024_Grupo6.xlsx',
-                     sheet_name='Santa Ana')
+data = pd.read_excel('Datos_examen_final_18Co2024_Grupo6.xlsx', sheet_name='Santa Ana')
 
 # Convertir la columna 'Fecha' al tipo datetime
 data['Fecha'] = pd.to_datetime(data['Fecha'], dayfirst=True)
