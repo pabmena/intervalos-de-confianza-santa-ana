@@ -1,4 +1,4 @@
-# Análisis de Ventas y Pruebas de Hipótesis para Supermercado 'Santa Ana' y Otros
+# Análisis de Ventas y Pruebas de Hipótesis para Supermercado 'Santa Ana' y Otros 
 
 Este proyecto contiene el código fuente y los datos necesarios para analizar las ventas de varios supermercados, calcular intervalos de confianza empíricos para las ventas del supermercado 'Santa Ana', realizar pruebas de hipótesis para comparar las ventas de diferentes sucursales y realizar una inferencia bayesiana sobre el porcentaje de morosidad en los clientes a crédito.
 
@@ -42,40 +42,56 @@ Este proyecto contiene el código fuente y los datos necesarios para analizar la
 ```bash
 git clone https://github.com/pabmena/intervalos-de-confianza-santa-ana.git
 cd intervalos-de-confianza-santa-ana
+Instalar las dependencias:
+Utiliza el archivo requirements.txt para instalar las dependencias necesarias:
 
-### Instalar las dependencias: Utiliza el archivo requirements.txt para instalar las dependencias necesarias
+bash
+Copiar código
 pip install -r requirements.txt
+Ejecutar los scripts:
+Punto 1: Intervalos de Confianza
+Ejecuta el siguiente comando para calcular los intervalos de confianza de las ventas mensuales del supermercado 'Santa Ana':
 
-#### Ejecutar los scripts:
+bash
+Copiar código
+python calculo_intervalos.py
+Este script generará el archivo resultados_intervalos_confianza_Santa_Ana.xlsx con los resultados.
 
-Punto 1: Intervalos de Confianza 
-#Ejecuta el siguiente comando para calcular los intervalos de confianza de las ventas mensuales del supermercado 'Santa Ana':
-python calculo_intervalos.py # Este script generará el archivo resultados_intervalos_confianza_Santa_Ana.xlsx con los resultados.
+Punto 2: Pruebas ANOVA
+Ejecuta el siguiente comando para realizar las pruebas ANOVA:
 
-Punto 2: Pruebas ANOVA 
-#Ejecuta el siguiente comando para realizar las pruebas ANOVA:
-python anova.py #Los resultados se mostrarán en la consola.
+bash
+Copiar código
+python anova.py
+Los resultados se mostrarán en la consola.
 
 Punto 3: Pruebas de Hipótesis
-#Ejecuta el siguiente comando para realizar las pruebas de hipótesis entre 'La Floresta' y 'Palermo':
-python prueba_hipotesis.py # Los resultados se mostrarán en la consola.
+Ejecuta el siguiente comando para realizar las pruebas de hipótesis entre 'La Floresta' y 'Palermo':
+
+bash
+Copiar código
+python prueba_hipotesis.py
+Los resultados se mostrarán en la consola.
 
 Punto 4: Inferencia Bayesiana del Porcentaje de Morosidad
-#Ejecuta el siguiente comando para realizar la inferencia bayesiana y generar el gráfico de las distribuciones a priori y posteriori:
-python inferencia_bayesiana.py # Este script mostrará en la consola los parámetros de la distribución posteriori y generará el archivo distribucion_morosidad.png con el gráfico.
+Ejecuta el siguiente comando para realizar la inferencia bayesiana y generar el gráfico de las distribuciones a priori y posteriori:
 
-# Requisitos
-Python 3.x instalado en tu sistema 
-# Las librerías de Python especificadas en requirements.txt.
+bash
+Copiar código
+python inferencia_bayesiana.py
+Este script mostrará en la consola los parámetros de la distribución posteriori y generará el archivo distribucion_morosidad.png con el gráfico.
 
-Datos # El archivo Datos_examen_final_18Co2024_Grupo6.xlsx contiene los datos de ventas diarias de cinco supermercados: 'Santa Ana', 'La Floresta', 'Los Cedros', 'Palermo' y 'Córdoba'. Estos datos se usan en todos los análisis descritos.
+Requisitos
+Python 3.x instalado en tu sistema.
+Las librerías de Python especificadas en requirements.txt.
+Datos
+El archivo Datos_examen_final_18Co2024_Grupo6.xlsx contiene los datos de ventas diarias de cinco supermercados: 'Santa Ana', 'La Floresta', 'Los Cedros', 'Palermo' y 'Córdoba'. Estos datos se usan en todos los análisis descritos.
 
 Resultados
-# Punto 1: Los resultados de los intervalos de confianza para 'Santa Ana' se almacenan en el archivo resultados_intervalos_confianza_Santa_Ana.xlsx.
-## Punto 2 y Punto 3: Los resultados de las pruebas ANOVA y de hipótesis se imprimen directamente en la consola.
-#### Punto 4: El gráfico de las distribuciones a priori y posteriori del porcentaje de morosidad se guarda en distribucion_morosidad.png.
-
+Punto 1: Los resultados de los intervalos de confianza para 'Santa Ana' se almacenan en el archivo resultados_intervalos_confianza_Santa_Ana.xlsx.
+Punto 2 y Punto 3: Los resultados de las pruebas ANOVA y de hipótesis se imprimen directamente en la consola.
+Punto 4: El gráfico de las distribuciones a priori y posteriori del porcentaje de morosidad se guarda en distribucion_morosidad.png.
 Consideraciones
-# Datos Sensibles: Asegúrate de que el archivo Datos_examen_final_18Co2024_Grupo6.xlsx no contenga información sensible antes de compartir el proyecto.
-## Reproducibilidad: Los scripts están diseñados para ser ejecutados secuencialmente y reproducir los resultados presentados en el informe.
-### Compatibilidad: Verifica que las versiones de las librerías instaladas sean compatibles con las especificadas en requirements.txt.
+Datos Sensibles: Asegúrate de que el archivo Datos_examen_final_18Co2024_Grupo6.xlsx no contenga información sensible antes de compartir el proyecto.
+Reproducibilidad: Los scripts están diseñados para ser ejecutados secuencialmente y reproducir los resultados presentados en el informe.
+Compatibilidad: Verifica que las versiones de las librerías instaladas sean compatibles con las especificadas en requirements.txt.
